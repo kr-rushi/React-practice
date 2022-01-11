@@ -8,14 +8,24 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventHandler from './components/EventHandler';
+import ParentComponent from './components/ParentComponent';
+import Conditional from './components/Conditional';
+import PersonsList from './components/PersonsList';
+import { Form } from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 function App() {
   return (
     <div className="App">
+      {/* <ParentComponent/> */}
+      {/* <Conditional/> */}
+      {/* <PersonsList/> */}
+      {/* <Form/> */}
+      <LifeCycleA/>
 {/* <Message/> */}
 {/* <Counter/> */}
 {/* <ClassClick/>
 <FunctionClick/> */}
-<EventHandler/>
+{/* <EventHandler/> */}
      {/* <Greeting name='hi' check='yes'>
        <p>
          heelloo buddy
