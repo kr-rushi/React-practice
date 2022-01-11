@@ -13,6 +13,9 @@ import Conditional from './components/Conditional';
 import PersonsList from './components/PersonsList';
 import { Form } from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
+import ComponentParent from './components/ComponentParent';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 function App() {
   return (
     <div className="App">
@@ -20,7 +23,10 @@ function App() {
       {/* <Conditional/> */}
       {/* <PersonsList/> */}
       {/* <Form/> */}
-      <LifeCycleA/>
+      {/* <RefsDemo/> */}
+      <FocusInput/>
+      {/* <ComponentParent/> */}
+      {/* <LifeCycleA/> */}
 {/* <Message/> */}
 {/* <Counter/> */}
 {/* <ClassClick/>
