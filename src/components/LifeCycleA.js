@@ -22,7 +22,7 @@ export class LifeCycleA extends Component {
 
     shouldComponentUpdate(){
         console.log('LifeCycleA shouldComponentUpdate')
-        return true
+        return false
     }
 
     getSnapshotBeforeUpdate(){
@@ -32,7 +32,8 @@ export class LifeCycleA extends Component {
 
 
     componentDidUpdate(){
-        console.log('LifeCycleA componentDidUpdate')
+        console.log('LifeCycleA componentDidUpdate nhbg')
+        return true
     }
 
     update = () =>{
@@ -43,7 +44,7 @@ export class LifeCycleA extends Component {
         console.log('LifeCycleA render')
         return (
             <div>
-            <LifeCycleB/> 
+            {/* <LifeCycleB/>  */}
         <div>LifeCycle A</div>
         <button onClick={this.update}>Check</button>
          </div>

@@ -16,6 +16,15 @@ import LifeCycleA from './components/LifeCycleA';
 import ComponentParent from './components/ComponentParent';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import Portaldemo from './components/Portaldemo';
+import ErrorHero from './components/ErrorHero';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
 function App() {
   return (
     <div className="App">
@@ -24,9 +33,30 @@ function App() {
       {/* <PersonsList/> */}
       {/* <Form/> */}
       {/* <RefsDemo/> */}
-      <FocusInput/>
+      {/* <FocusInput/> */}
+      {/* <Portaldemo/> */}
+      {/* <ErrorBoundary>
+      <ErrorHero heroName='Batman'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <ErrorHero heroName='Superman'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <ErrorHero heroName='joker'/>
+      </ErrorBoundary> */}
+      {/* <ClickCounter name='Rushi'/>
+      <HoverCounter></HoverCounter> */}
+      {/* <ClickCounterTwo/>
+      <HoverCounterTwo/> */}
+      {/* <CounterTwo render={(count,incrementCount)=>(
+        <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+      )}/>
+      <CounterTwo render={(count,incrementCount)=>(
+        <HoverCounterTwo count={count} incrementCount={incrementCount}/>
+      )}/> */}
+      {/* <User name={(isLoggedIn)=>isLoggedIn?'rushi':'Guest'}/> */}
       {/* <ComponentParent/> */}
-      {/* <LifeCycleA/> */}
+      <LifeCycleA/>
 {/* <Message/> */}
 {/* <Counter/> */}
 {/* <ClassClick/>
