@@ -1,33 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-import Greeting from './components/Greet';
-import {Greetq} from './components/Greet1';
-import Jsximplementation from './components/Jsximplementation';
-import Message from './components/Message';
-import Counter from './components/Counter';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventHandler from './components/EventHandler';
-import ParentComponent from './components/ParentComponent';
-import Conditional from './components/Conditional';
-import PersonsList from './components/PersonsList';
-import { Form } from './components/Form';
-import LifeCycleA from './components/LifeCycleA';
-import ComponentParent from './components/ComponentParent';
-import RefsDemo from './components/RefsDemo';
-import FocusInput from './components/FocusInput';
-import Portaldemo from './components/Portaldemo';
-import ErrorHero from './components/ErrorHero';
-import { ErrorBoundary } from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
-import CounterTwo from './components/CounterTwo';
+import logo from "./logo.svg";
+import "./App.css";
+import Greeting from "./components/Greet";
+import { Greetq } from "./components/Greet1";
+import Jsximplementation from "./components/Jsximplementation";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
+import EventHandler from "./components/EventHandler";
+import ParentComponent from "./components/ParentComponent";
+import Conditional from "./components/Conditional";
+import PersonsList from "./components/PersonsList";
+import { Form } from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
+import ComponentParent from "./components/ComponentParent";
+import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import Portaldemo from "./components/Portaldemo";
+import ErrorHero from "./components/ErrorHero";
+import { ErrorBoundary } from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import CounterTwo from "./components/CounterTwo";
+import { UserProvider } from "./components/UserContext";
+import ComponentC from "./components/ComponentC";
+import PostList from "./components/PostList";
+import PostForm from "./components/PostForm";
 function App() {
   return (
     <div className="App">
+      {/* <UserProvider value="Rushi">
+        <ComponentC />
+      </UserProvider> */}
+      {/* <PostList /> */}
+      <PostForm />
       {/* <ParentComponent/> */}
       {/* <Conditional/> */}
       {/* <PersonsList/> */}
@@ -56,13 +65,13 @@ function App() {
       )}/> */}
       {/* <User name={(isLoggedIn)=>isLoggedIn?'rushi':'Guest'}/> */}
       {/* <ComponentParent/> */}
-      <LifeCycleA/>
-{/* <Message/> */}
-{/* <Counter/> */}
-{/* <ClassClick/>
+      {/* <LifeCycleA/> */}
+      {/* <Message/> */}
+      {/* <Counter/> */}
+      {/* <ClassClick/>
 <FunctionClick/> */}
-{/* <EventHandler/> */}
-     {/* <Greeting name='hi' check='yes'>
+      {/* <EventHandler/> */}
+      {/* <Greeting name='hi' check='yes'>
        <p>
          heelloo buddy
        </p>
