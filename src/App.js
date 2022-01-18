@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
+import React, { useReducer } from "react";
 import Greeting from "./components/Greet";
 import { Greetq } from "./components/Greet1";
 import Jsximplementation from "./components/Jsximplementation";
@@ -40,17 +40,65 @@ import MouseContainer from "./components/MouseContainer";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetchingHooks from "./components/DataFetchingHooks";
 import HooksContext from "./components/HooksContext";
+import UseReducerCounterOne from "./components/useReducercounterone";
+import UseReducerCounterTwo from "./components/UseReducerCounterTwo";
+import UseReducerCounterThree from "./components/UseReducerCounterThree";
+import UseReducerComponentA from "./components/UseReducerComponentA";
+import UseReducerComponentB from "./components/UseReducerComponentB";
+import UseReducerComponentC from "./components/UseReducerComponentC";
+import UseReducerDataFetching from "./components/UseReducerDataFetching";
+import UseMemoCounter from "./components/UseMemoCounter";
+import UseRefHookTimer from "./components/UseRefHookTimer";
+import CustomHookOne from "./components/CustomHookOne";
+import CustomHookTwo from "./components/CustomHookTwo";
+import UserForm from "./components/UserForm";
+import CustomHooksCounterOne from "./components/CustomHooksCounterOne";
+import CustomHooksCounterTwo from "./components/CustomHooksCounterTwo";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
+export const CountContext = React.createContext();
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case "increment":
+//       return state + action.value;
+//     case "decrement":
+//       return state - action.value;
+//     case "reset":
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// };
+
 function App() {
+  // const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
-      <UserContext.Provider value={"vishwas"}>
+      {/* <CountContext.Provider
+        value={{ countstate: count, countdispatch: dispatch }}
+      >
+        <UseReducerComponentA />
+        <UseReducerComponentB />
+        <UseReducerComponentC />
+      </CountContext.Provider>
+      count {count} */}
+      {/* <UseReducerDataFetching /> */}
+      {/* <UseMemoCounter /> */}
+      {/* <UseRefHookTimer /> */}
+      {/* <CustomHookOne />
+      <CustomHookTwo /> */}
+      {/* <CustomHooksCounterOne />
+      <CustomHooksCounterTwo />
+      <UserForm /> */}
+      {/* <UserContext.Provider value={"vishwas"}>
         <ChannelContext.Provider value={"hii"}>
           <HooksContext />
         </ChannelContext.Provider>
-      </UserContext.Provider>
-
+      </UserContext.Provider> */}
+      {/* <UseReducerCounterOne /> */}
+      {/* <UseReducerCounterTwo /> */}
+      {/* <UseReducerCounterThree /> */}
       {/* <UserProvider value="Rushi">
         <ComponentC />
       </UserProvider> */}
@@ -83,14 +131,18 @@ function App() {
       </ErrorBoundary> */}
       {/* <ClickCounter name='Rushi'/>
       <HoverCounter></HoverCounter> */}
-      {/* <ClickCounterTwo/>
-      <HoverCounterTwo/> */}
-      {/* <CounterTwo render={(count,incrementCount)=>(
-        <ClickCounterTwo count={count} incrementCount={incrementCount}/>
-      )}/>
-      <CounterTwo render={(count,incrementCount)=>(
-        <HoverCounterTwo count={count} incrementCount={incrementCount}/>
-      )}/> */}
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo /> */}
+      <CounterTwo
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <CounterTwo
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
       {/* <User name={(isLoggedIn)=>isLoggedIn?'rushi':'Guest'}/> */}
       {/* <ComponentParent/> */}
       {/* <LifeCycleA/> */}
