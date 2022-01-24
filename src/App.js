@@ -54,6 +54,11 @@ import CustomHookTwo from "./components/CustomHookTwo";
 import UserForm from "./components/UserForm";
 import CustomHooksCounterOne from "./components/CustomHooksCounterOne";
 import CustomHooksCounterTwo from "./components/CustomHooksCounterTwo";
+import {
+  StyledButton,
+  FancyButton,
+  SubmitButton,
+} from "./components/StyledComponents/Button.Styles";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 export const CountContext = React.createContext();
@@ -133,7 +138,11 @@ function App() {
       <HoverCounter></HoverCounter> */}
       {/* <ClickCounterTwo />
       <HoverCounterTwo /> */}
-      <CounterTwo
+      <StyledButton type="submit">StyledButtonS</StyledButton>
+      <StyledButton variant="outline">StyledButtonS</StyledButton>
+      <FancyButton as="a">Fancy Button</FancyButton>
+      <SubmitButton>submit</SubmitButton>
+      {/* <CounterTwo
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
@@ -142,7 +151,7 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
       {/* <User name={(isLoggedIn)=>isLoggedIn?'rushi':'Guest'}/> */}
       {/* <ComponentParent/> */}
       {/* <LifeCycleA/> */}
